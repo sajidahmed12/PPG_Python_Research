@@ -15,7 +15,7 @@ cd PPG_Python_Research
 ```
 
 ## To start Video to PPG conversion Run the following command within the current working directory. 
-- put all the video data into the Data folder,
+- Put all of the video data into the data folder,
 - Then, open terminal on the repositories directory and activate into your vnev, then type 
 ```Shell
 python3 Video_to_ppg.py
@@ -40,8 +40,8 @@ python3 Video_to_ppg.py
 * Matplotlib
 
 
-- Author:Md Sajid Ahmed
-- Supervisors: Dr.Tanzilur Rahman, Syed Atahar Bin Amir.
+- Author: [Md Sajid Ahmed](https://www.linkedin.com/in/sajid-ahmed-rafi/)
+- Supervisors: [Dr.Tanzilur Rahman](http://ece.northsouth.edu/people/dr-tanzilur-rahman-2/), [Syed Atahar Bin Amir](http://ece.northsouth.edu/people/mr-syedathar-binamir/).
 
 # Contact
 For questions about our paper or code, please contact [Md Sajid Ahmed](mailto:sajid.ahmed1@northsouth.edu).
