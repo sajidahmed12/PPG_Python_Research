@@ -10,7 +10,7 @@ This Repo contains
 ## Installation
  - Clone this repository and enter it run these commands on cmd or terminal window:
 ```Shell
-git clone https://github.com/sajidahmed12/PPG_Python_Research.git
+git clone https://github.com/sajidahmed12/PPG_Python_Research
 cd PPG_Python_Research
 ```
 
