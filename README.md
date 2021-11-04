@@ -3,9 +3,9 @@
 Repository for PPG Signal Processing Research wsork Codes.!! 
 
 This Repo contains 
-* 1. Different ways of PPG Signal Preprocessing. 
-* 2. Different Regression methods for testing  
-* 3. Some Analysis and Feature Engineering technique and testing
+1. Different ways of PPG Signal Preprocessing. 
+2. Different Regression methods for testing  
+3. Some Analysis and Feature Engineering technique and testing
 
 ## Installation
  - Clone this repository and enter it run these commands on cmd or terminal window:
