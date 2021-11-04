@@ -40,8 +40,8 @@ python3 Video_to_ppg.py
 * Matplotlib
 
 
-- Author: [Md Sajid Ahmed](https://www.linkedin.com/in/sajid-ahmed-rafi/)
-- Supervisors: [Dr.Tanzilur Rahman](http://ece.northsouth.edu/people/dr-tanzilur-rahman-2/), [Syed Atahar Bin Amir](http://ece.northsouth.edu/people/mr-syedathar-binamir/).
+#### Author: [Md Sajid Ahmed](https://www.linkedin.com/in/sajid-ahmed-rafi/)
+#### Supervisors: [Dr.Tanzilur Rahman](http://ece.northsouth.edu/people/dr-tanzilur-rahman-2/), [Syed Atahar Bin Amir](http://ece.northsouth.edu/people/mr-syedathar-binamir/).
 
 # Contact
 For questions about our paper or code, please contact [Md Sajid Ahmed](mailto:sajid.ahmed1@northsouth.edu).
