@@ -1,13 +1,13 @@
 import os
 import cv2
-import tqdm
-import argparse
 import numpy as np
 import pandas as pd
 from glob import glob
+from tqdm import tqdm
 import matplotlib.pylab as plt
 
-# parser = argparse.ArgumentParser(
+#import argparse
+#parser = argparse.ArgumentParser(
 #     description='input directory, video filetypes for reading data')
 # parser.add_argument('--input_dir', default='', type=str,
 #                     help='input directory')
@@ -15,9 +15,13 @@ import matplotlib.pylab as plt
 # parser.set_defaults(os.getcwd())
 # args = parser.parse_args()
 
+video_type ='*.mp4'
+folder_path=os.getcwd()    # Current working directory
+print("\nCurrent folder path:"+folder_path)
 
-folder_path='video_raw/2801_onp/'
-csv_filename = "signal_list_samsung"
+csv_filename = "signal_list_iphone7p"
+
+#create some empty lists
 video_list = []
 ppg_signals_list=[]
 
@@ -36,7 +40,7 @@ def video2Frame(file):
 
         pbar.update(1)      
 
-        frame = cap.read()
+        ret, frame = cap.read()
         img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         img_red = img.copy()
         img_red[:, :, 1:3] = 0     #Getting only Red channel values
@@ -61,32 +65,25 @@ def video2Frame(file):
 
 def preprocess():
 
-    for f in glob(folder_path+'*.mp4'):
+    for f in glob(folder_path+'/'+video_type):
         video_list.append(f)
-    print("Total Number of video files for PPG conversion: ",len(video_list))
+    total_videos =len(video_list)
+
+    print("Total Number of video files for PPG conversion:",total_videos)
     print("\n")
-    print("Started converting video to frame and generating all PPG signals.......")
+    print("Started converting video to frame and generating all "+str(total_videos)+" PPG signals.......")
 
     for signal in video_list:
         temp = video2Frame(signal)
-        ppg_signals_list.append(temp)
+        ppg_signals_list.append(temp[:1500])   # Saving First 1500 frames (Upto 50 seconds) only
 
-    print("Generating all PPG signals and saving it to"+csv_filename+".csv file.......")
-
+    
+    print("Generating all "+str(total_videos)+" PPG signals and saving it to "+csv_filename+".csv file.......")
     df = pd.DataFrame(ppg_signals_list)
     df.to_csv(folder_path+csv_filename+'.csv', index=False)
 
 
-# # Visualize the signal from saved PPG Signal values
-
-# signal = pd.read_csv(folder_path+csv_filename+'.csv', delimiter = ",")
-# signalT=signal.T
-
-# plt.plot(signalT[7])
-# plt.xlabel('RAW PPG GRAP H')
-# plt.ylabel('intensity')
-# plt.show()
-
-
 if __name__ == '__main__':
     preprocess()
+
+
