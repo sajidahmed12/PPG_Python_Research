@@ -16,7 +16,7 @@ import matplotlib.pylab as plt
 # args = parser.parse_args()
 
 video_type ='*.mp4'
-folder_path=os.getcwd()    # Current working directory
+folder_path=os.getcwd()+'/data'     # Current working directory/our signal data
 print("\nCurrent folder path:"+folder_path)
 
 csv_filename = "signal_list_iphone7p"

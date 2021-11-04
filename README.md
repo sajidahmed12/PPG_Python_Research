@@ -21,6 +21,14 @@ cd PPG_Python_Research
 python3 Video_to_ppg.py
 ``` 
 
+## Here is an example of RAW PPG Signal visualization using Matplotlib.
+
+<hr>
+<p align="left">
+<img src=./doc/sample_signal.JPG>  
+</p>
+
+
 
 
 ## Requirements
