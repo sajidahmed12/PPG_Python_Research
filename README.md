@@ -15,8 +15,8 @@ cd PPG_Python_Research
 ```
 
 ## To start Video to PPG conversion Run the following command within the current working directory. 
-
-- open terminal and activate into your vnev then type 
+- put all the video data into the Data folder,
+- Then, open terminal on the repositories directory and activate into your vnev, then type 
 ```Shell
 python3 Video_to_ppg.py
 ``` 
