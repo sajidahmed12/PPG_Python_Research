@@ -7,7 +7,7 @@ This Repo contains
 * 2. Different Regression methods for testing  
 * 3. Some Analysis and Feature Engineering technique and testing
 
-# Installation
+## Installation
  - Clone this repository and enter it run these commands on cmd or terminal window:
 ```Shell
 git clone https://github.com/sajidahmed12/PPG_Python_Research.git
@@ -35,5 +35,7 @@ python3 Video_to_ppg.py
 Author: Md Sajid Ahmed
 Supervisor: Dr.Tanzilur Rahman, Syed Atahar Bin Amir
 
-Contact: mailto:sajid.ahmed1@northsouth.edu
+# Contact
+For questions about our paper or code, please contact [Md Sajid Ahmed](mailto:sajid.ahmed1@northsouth.edu).
+
 
