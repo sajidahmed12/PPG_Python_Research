@@ -32,8 +32,8 @@ python3 Video_to_ppg.py
 * Matplotlib
 
 
-Author: Md Sajid Ahmed
-Supervisor: Dr.Tanzilur Rahman, Syed Atahar Bin Amir
+- Author:Md Sajid Ahmed
+- Supervisors: Dr.Tanzilur Rahman, Syed Atahar Bin Amir.
 
 # Contact
 For questions about our paper or code, please contact [Md Sajid Ahmed](mailto:sajid.ahmed1@northsouth.edu).
