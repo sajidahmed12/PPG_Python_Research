@@ -47,7 +47,3 @@ Ensure you have the following dependencies installed:
 
 ## Contact
 For any questions about our paper or code, please contact [Md Sajid Ahmed](mailto:sajid.ahmed1@northsouth.edu).
-
----
-
-These adjustments aim to improve clarity, provide clear instructions, and maintain consistency throughout the README file.
